@@ -1,8 +1,8 @@
 <?php
 // src/Controller/LuckyController.php
-//namespace App\Controller;
+namespace App\Controller;
 
-//use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class LuckyController
@@ -10,7 +10,6 @@ class LuckyController
      /**
       * @Route("/lucky/number")
       */
-
     public function number()
     {
         $number = mt_rand(0, 100);
